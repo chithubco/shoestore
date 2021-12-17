@@ -1,4 +1,4 @@
-package com.echithub.shoestore.ui
+package com.echithub.shoestore
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.echithub.shoestore.R
 
-
-class ShowDetailFragment : Fragment() {
-
+class ShoeListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +18,6 @@ class ShowDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_show_detail, container, false)
+        return inflater.inflate(R.layout.fragment_shoe_list, container, false)
     }
 }
