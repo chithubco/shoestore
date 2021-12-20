@@ -15,7 +15,7 @@
             android:id="@+id/ivShoeImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/shoe_logo"
+            android:src="@drawable/shoe_main"
             app:layout_constraintBottom_toTopOf="@+id/btNavInstructionFragment"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,15 +35,17 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/btNavInstructionFragment"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.33" />
 
         <Button
             android:id="@+id/btNavInstructionFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
-            android:text="Instruction"
+            android:text="Read Instruction"
             app:layout_constraintBottom_toBottomOf="@id/ivShoeImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

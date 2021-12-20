@@ -34,7 +34,7 @@ class welcomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btNavInstructionFragment.setOnClickListener {
-            findNavController().navigate(R.id.action_welcomeFragment_to_instructionFragment)
+            findNavController().navigate(R.id.action_welcomeFragment_to_InstructionFragment2)
         }
     }
 

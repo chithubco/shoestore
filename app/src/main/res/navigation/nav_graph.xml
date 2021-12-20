@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/LoginFragment">
 
     <fragment
-        android:id="@+id/loginFragment"
+        android:id="@+id/LoginFragment"
         android:name="com.echithub.shoestore.ui.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
-            app:popUpTo="@id/loginFragment"
+            app:popUpTo="@id/InstructionFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -22,9 +22,8 @@
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
-            android:id="@+id/action_welcomeFragment_to_instructionFragment"
-            app:destination="@id/InstructionFragment"
-            app:popUpToInclusive="false" />
+            android:id="@+id/action_welcomeFragment_to_InstructionFragment2"
+            app:destination="@id/InstructionFragment" />
     </fragment>
     <fragment
         android:id="@+id/InstructionFragment"
@@ -52,7 +51,14 @@
         android:id="@+id/showDetailFragment"
         android:name="com.echithub.shoestore.ShowDetailFragment"
         android:label="fragment_show_detail"
-        tools:layout="@layout/fragment_show_detail" />
+        tools:layout="@layout/fragment_show_detail" >
+        <argument
+            android:name="shoe"
+            app:argType="com.echithub.shoestore.model.Shoe" />
+        <action
+            android:id="@+id/action_showDetailFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/createShoeFragment"
         android:name="com.echithub.shoestore.CreateShoeFragment"

@@ -41,6 +41,7 @@ class LoginFragment : Fragment() {
         val usernameEditText = binding.username
         val passwordEditText = binding.password
         val loginButton = binding.loginButton
+        val newLoginButton = binding.newLoginButton
         val loadingProgressBar = binding.loading
 
         loginButton.setOnClickListener {
@@ -48,6 +49,12 @@ class LoginFragment : Fragment() {
             Log.i("LoginFragment","On Click Setup")
             findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
 //            Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_welcomeFragment)
+        }
+
+        newLoginButton.setOnClickListener {
+//            Toast.makeText(this.context,"I got here",Toast.LENGTH_LONG).show()
+            Log.i("LoginFragment","On Click Setup")
+            findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
         }
 
 
